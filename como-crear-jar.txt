@@ -1,0 +1,8 @@
+Crear un .mf :
+	Main-Class: ProbadorRestriccion
+	Sealed: true
+
+jar -cf NombreDelJar.jar NombreClaseConMain.class
+jar cmf temp.mf NombreDelJar.jar NombreClaseConMain.class
+jar cmf temp.mf NombreDelJar.jar *.class
+java -jar NombreDelJar.jar
